@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="31447c57-b2a4-4e7a-bf49-e0953890605a"
+  name="Mementor" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ee7b5f6c-c111-4b8e-945a-a59a5321fa7d"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="de9d8c3b-b85c-4a3c-86b7-84c145df477c"
+        name="Користувач"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="855e97d5-2f66-4029-ad7a-801591f79397"
+            isDerived="false"
+            sourceEndRoleName="Користувач"
+            targetEndRoleName="Вклчити дитектор температури"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fc1ea3d0-9dfe-45b9-becb-a5675658a0b2"
+              LastKnownName="Вклчити дитектор температури"
+              LastKnownLocation="Mementor.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8de6ce09-56d9-4315-be17-7bce8cb2a3a5"
+                  name="Користувач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="299fe740-1a5c-4108-aefc-a4a67818f3ab"
+                  name="Вклчити дитектор температури"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e6452a23-b357-4266-b193-c3364a64fe94"
+            isDerived="false"
+            sourceEndRoleName="Користувач"
+            targetEndRoleName="Включити дитектор руху"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7e1eb40d-8893-4679-97ef-1d2434eda8bc"
+              LastKnownName="Включити дитектор руху"
+              LastKnownLocation="Mementor.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ee8bcff-cbc9-4583-b9bd-563426a54cdd"
+                  name="Користувач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c333514-8221-4dcc-8aa6-671228e1629a"
+                  name="Включити дитектор руху"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c007b2ca-f93f-400a-a09d-c3c4f1ccb021"
+            isDerived="false"
+            sourceEndRoleName="Користувач"
+            targetEndRoleName="Включити дитектор температури і руху"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d129ca4-f90a-486c-a71e-46ff1a112bd8"
+              LastKnownName="Включити дитектор температури і руху"
+              LastKnownLocation="Mementor.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5385ab46-ba22-4b40-94d7-975465bf41fd"
+                  name="Користувач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="062e2f11-c5ad-4682-897d-df06296d5746"
+                  name="Включити дитектор температури і руху"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aeacbd0c-c6c2-40c2-9af1-4619af27a0d9"
+            isDerived="false"
+            sourceEndRoleName="Користувач"
+            targetEndRoleName="Розпочати модельювання"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9e2f4c85-4d01-44fd-b1b8-4d4563aa17f3"
+              LastKnownName="Розпочати модельювання"
+              LastKnownLocation="Mementor.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="baefa91c-b906-4285-84c0-73e4ef3f928c"
+                  name="Користувач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbdfc1d2-6229-418a-ac75-9d1c0118c9ce"
+                  name="Розпочати модельювання"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fc1ea3d0-9dfe-45b9-becb-a5675658a0b2"
+        name="Вклчити дитектор температури"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1122991b-fab2-4d88-8d98-f5e87b98c48f">
+            <useCaseMoniker
+              Id="9e2f4c85-4d01-44fd-b1b8-4d4563aa17f3"
+              LastKnownName="Розпочати модельювання"
+              LastKnownLocation="Mementor.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e1eb40d-8893-4679-97ef-1d2434eda8bc"
+        name="Включити дитектор руху"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="06ecee90-a754-4649-9c9f-d9d6cba1b891">
+            <useCaseMoniker
+              Id="9e2f4c85-4d01-44fd-b1b8-4d4563aa17f3"
+              LastKnownName="Розпочати модельювання"
+              LastKnownLocation="Mementor.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d129ca4-f90a-486c-a71e-46ff1a112bd8"
+        name="Включити дитектор температури і руху"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8a567210-8f6c-45b2-a7d3-9fe39fbc373e">
+            <useCaseMoniker
+              Id="9e2f4c85-4d01-44fd-b1b8-4d4563aa17f3"
+              LastKnownName="Розпочати модельювання"
+              LastKnownLocation="Mementor.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9e2f4c85-4d01-44fd-b1b8-4d4563aa17f3"
+        name="Розпочати модельювання"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4462ad48-b3bc-4cca-857e-766790930b1d">
+            <useCaseMoniker
+              Id="125baee3-507c-4d6d-bdce-68b342c3d3fe"
+              LastKnownName="Закінчити моделювання"
+              LastKnownLocation="Mementor.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="125baee3-507c-4d6d-bdce-68b342c3d3fe"
+        name="Закінчити моделювання"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

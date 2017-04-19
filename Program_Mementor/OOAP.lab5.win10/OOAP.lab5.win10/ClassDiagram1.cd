@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OOAP.lab5.win10.Equipment" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAIAAAAA=</HashCode>
+      <FileName>Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.EquipClothes" Collapsed="true">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.EquipShield" Collapsed="true">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="OOAP.lab5.win10.Equipment" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.191" />
+        <Point X="6.75" Y="5.431" />
+        <Point X="5.873" Y="5.431" />
+        <Point X="5.873" Y="6.941" />
+        <Point X="5.75" Y="6.941" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.EquipArsenal" Collapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAIAAAAg=</HashCode>
+      <FileName>Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.FacadeEquipment" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAQAIAAAAAQAgAAAAACgAgAAAgAABAA=</HashCode>
+      <FileName>FacadeEquipment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOAP.lab5.win10.FactoryCharacter" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>FacadeEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.Fight" Collapsed="true">
+    <Position X="9.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAAAAAAQAAAIAQACAAAgIgAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Fight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOAP.lab5.win10.Global" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.Die" Collapsed="true">
+    <Position X="17" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.Character" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAKAABoAEQRAAAIAAAAAQEgAASAAWEE0AACAkGQAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOAP.lab5.win10.Human" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.Troll" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOAP.lab5.win10.Orc" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="OOAP.lab5.win10.Clothes" Collapsed="true">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABAAAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OOAP.lab5.win10.Shield" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAABAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OOAP.lab5.win10.Arsenal" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAAAAAAAAQAAAAAAAAAIAIAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Сharacter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

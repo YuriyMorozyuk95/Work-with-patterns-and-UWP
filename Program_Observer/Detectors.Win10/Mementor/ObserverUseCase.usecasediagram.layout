@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ObserverUseCase">
+  <useCaseModelRootMoniker Id="59467cdc-62da-46e3-87b7-57aafd1f811d" />
+  <nestedChildShapes>
+    <actorShape Id="1388c9aa-e031-41b8-822d-84a6a57fcc63" absoluteBounds="0.5, 2, 0.875, 0.875" isReference="false" heightOffset="0">
+      <actorMoniker Id="33954473-75a1-4fe8-b690-b5ebfad56ec5" LastKnownName="Користувач" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="5139ab9c-34a6-4654-a437-e046c66c5b2c" absoluteBounds="2.75, 0.875, 1.5, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="acef229a-63cf-4926-beb9-a136734f5662" LastKnownName="Вклчити дитектор температури" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.24542682926829); (2.90075250637765 : 1.57558426549274)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8355bd63-632c-401b-82fd-456633656a3c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1388c9aa-e031-41b8-822d-84a6a57fcc63" />
+        <useCaseShapeMoniker Id="5139ab9c-34a6-4654-a437-e046c66c5b2c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="9de6c93f-db85-4f26-83c8-4f8b4bf04321" absoluteBounds="2.375, 2.625, 1.375, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="bbddc597-3a61-4682-bed6-a12a785034fd" LastKnownName="Включити дитектор руху" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.55330882352941); (2.44398604430416 : 2.83627571760993)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="2829d28f-44fb-468c-afdb-db4056ddea04" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1388c9aa-e031-41b8-822d-84a6a57fcc63" />
+        <useCaseShapeMoniker Id="9de6c93f-db85-4f26-83c8-4f8b4bf04321" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="84189f0f-f680-4e56-8950-3ca34e7ec7ae" absoluteBounds="2.5, 3.5, 1.5, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="67478112-5a5e-43fb-b2aa-9993bc99f1ea" LastKnownName="Включити дитектор температури і руху" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.72128378378378); (2.74849044738765 : 3.61219650641361)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="dd3ac352-f107-424c-a1af-376e2ca5beb1" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1388c9aa-e031-41b8-822d-84a6a57fcc63" />
+        <useCaseShapeMoniker Id="84189f0f-f680-4e56-8950-3ca34e7ec7ae" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="83bfd514-491d-4b46-ada5-21968770f4f8" absoluteBounds="5.25, 2, 1.375, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2962c0c7-a853-4da5-8587-a1d85aa5a73b" LastKnownName="Розпочати модельювання" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.43203125); (5.25018045735326 : 2.38359149428308)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="807866fd-bc4c-4394-94f2-779c8aa64a0e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1388c9aa-e031-41b8-822d-84a6a57fcc63" />
+        <useCaseShapeMoniker Id="83bfd514-491d-4b46-ada5-21968770f4f8" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <extendConnector edgePoints="[(4.10079132242044 : 1.5743833969525); (5.40042884687753 : 2.14089206145944)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="include">
+      <extendMoniker Id="6bd1018c-6e04-42ec-9a51-76c7b0c32fd7" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="5139ab9c-34a6-4654-a437-e046c66c5b2c" />
+        <useCaseShapeMoniker Id="83bfd514-491d-4b46-ada5-21968770f4f8" />
+      </nodes>
+    </extendConnector>
+    <extendConnector edgePoints="[(3.70114638990381 : 2.86116382828178); (5.29885361009619 : 2.51383617171822)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="include">
+      <extendMoniker Id="6203ad73-b136-4e77-8e18-7fbc3b18c365" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="9de6c93f-db85-4f26-83c8-4f8b4bf04321" />
+        <useCaseShapeMoniker Id="83bfd514-491d-4b46-ada5-21968770f4f8" />
+      </nodes>
+    </extendConnector>
+    <extendConnector edgePoints="[(3.78121176333799 : 3.62865595154768); (5.46710856161756 : 2.6484833944084)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="include">
+      <extendMoniker Id="0027a02d-5904-48e8-97ca-83ff16d665f9" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="84189f0f-f680-4e56-8950-3ca34e7ec7ae" />
+        <useCaseShapeMoniker Id="83bfd514-491d-4b46-ada5-21968770f4f8" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="b3ad164b-be5e-484a-9852-d0cdea38b67b" absoluteBounds="8.125, 2, 1.125, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b6bee426-e4e0-45a3-a085-61eaa783ed7d" LastKnownName="Закінчити моделювання" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(6.625 : 2.375); (8.125 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="include">
+      <includeMoniker Id="e87746fb-f088-4493-95a0-b178b4caab6d" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="83bfd514-491d-4b46-ada5-21968770f4f8" />
+        <useCaseShapeMoniker Id="b3ad164b-be5e-484a-9852-d0cdea38b67b" />
+      </nodes>
+    </includeConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

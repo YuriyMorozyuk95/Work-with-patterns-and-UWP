@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="OOAP.lab5.win10.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OOAP.lab5.win10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="261*"/>
+            <ColumnDefinition Width="188*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="3">
+            <TextBlock Text="Курсове завдання №3(Шаблон Memento)" FontSize="20" Margin="10"/>
+            <TextBlock Text="Емулятор битви" FontSize="42" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="20"/>
+        </StackPanel>
+        <StackPanel Margin="0,123,0,27" Grid.RowSpan="2" Grid.ColumnSpan="3">
+            <TextBlock Text="Виберіть персонажа" HorizontalAlignment="Center" FontSize="20" Margin="5"/>
+            <ListBox Name="ListWariors" ItemsSource="{Binding Path=Wariors}"  Margin="430,0" HorizontalAlignment="Center" Width="420" Height="496">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="#19A15F" BorderThickness="3" Width="380">
+                            <Grid >
+                                <Image Name="Icon" Source="{Binding Path=Icon}" Height="64" Width="64" HorizontalAlignment="Left" Margin="14"/>
+                                <TextBlock Text="Раса: " Margin="100,15,0,0" FontSize="20"/>
+                                <TextBlock Text="{Binding Path=Name}" Margin="150,15,0,0" FontSize="20"/>
+
+                                <TextBlock Text="Здоров'я: " Margin="250,15,0,0" FontSize="15"/>
+                                <TextBlock Text="{Binding Path=Health}" Margin="320,15,0,0" FontSize="15"/>
+
+                                <TextBlock Text="Броня: " Margin="250,35,0,0" FontSize="15"/>
+                                <TextBlock Text="{Binding Path=Armor}" Margin="320,35,0,0" FontSize="15"/>
+
+                                <TextBlock Text="Сила: " Margin="250,55,0,0" FontSize="15"/>
+                                <TextBlock Text="{Binding Path=Strenght}" Margin="320,55,0,0" FontSize="15"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="3">
+            <Button Content="Одягнути" HorizontalAlignment="Right" FontSize="20"  Width="180" Click="Button_Click" Margin="0,50,0,10"/>
+            <Button Content="Вилікувати" HorizontalAlignment="Right" FontSize="20"  Width="180" Margin="0,10,0,10" Name="Heal" Click="Heal_Click" />
+            <Button Content="Бій" HorizontalAlignment="Right" Margin="0,10,0,10" FontSize="20"  Width="180" Click="buttle_Click" Name="battle"/>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="3">
+            <AppBarButton Icon="Save" Content="Зберигти"  Margin="0,50,0,0" HorizontalAlignment="Left" Height="44" Width="58" Name="Save" Click="Save_Click"/>
+            <TextBlock Text="Зберегти" />
+            <AppBarButton Icon="OpenFile" Content="Зберигти"  Margin="0,10,0,0" HorizontalAlignment="Left" Height="44" Name="Open" Click="Open_Click"/>
+            <TextBlock Text="Відкрити" />
+        </StackPanel>
+
+    </Grid>
+</Page>

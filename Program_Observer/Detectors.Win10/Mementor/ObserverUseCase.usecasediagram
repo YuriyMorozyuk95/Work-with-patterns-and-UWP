@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="59467cdc-62da-46e3-87b7-57aafd1f811d" name="ObserverUseCase" linkedPackageId="d60446d7-e152-4308-9a16-b77f5c337096" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="a9835c3b-8f74-434e-90ec-fff41d395d31">
+      <profileInstance Id="a1efc69e-89d5-4dc6-8395-60f3ac12b087" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6267cbb9-373c-47ed-acfc-2a3a3de4b61b">
+      <profileInstance Id="66a57048-aa57-430e-8d77-61c1667f7d2b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="33954473-75a1-4fe8-b690-b5ebfad56ec5" name="Користувач" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de9d8c3b-b85c-4a3c-86b7-84c145df477c" />
+        <targetEnds>
+          <association Id="8355bd63-632c-401b-82fd-456633656a3c" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Вклчити дитектор температури" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="acef229a-63cf-4926-beb9-a136734f5662" LastKnownName="Вклчити дитектор температури" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96c06f06-ba1f-4fe9-9dac-9ad38d1176de" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8de6ce09-56d9-4315-be17-7bce8cb2a3a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebe3cc95-c56b-4668-9681-bdebc2d87dc3" name="Вклчити дитектор температури" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="299fe740-1a5c-4108-aefc-a4a67818f3ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="855e97d5-2f66-4029-ad7a-801591f79397" />
+          </association>
+          <association Id="2829d28f-44fb-468c-afdb-db4056ddea04" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Включити дитектор руху" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bbddc597-3a61-4682-bed6-a12a785034fd" LastKnownName="Включити дитектор руху" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b557bb7b-d555-45c7-8c39-50257db4290d" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2ee8bcff-cbc9-4583-b9bd-563426a54cdd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6150e021-ea6f-47b7-b615-ca2193cfbee2" name="Включити дитектор руху" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5c333514-8221-4dcc-8aa6-671228e1629a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e6452a23-b357-4266-b193-c3364a64fe94" />
+          </association>
+          <association Id="dd3ac352-f107-424c-a1af-376e2ca5beb1" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Включити дитектор температури і руху" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="67478112-5a5e-43fb-b2aa-9993bc99f1ea" LastKnownName="Включити дитектор температури і руху" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="34603382-07c4-4390-b93a-3fcb1b315488" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5385ab46-ba22-4b40-94d7-975465bf41fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23d75d8e-3532-4e50-ac16-4be5f5ffa75c" name="Включити дитектор температури і руху" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="062e2f11-c5ad-4682-897d-df06296d5746" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c007b2ca-f93f-400a-a09d-c3c4f1ccb021" />
+          </association>
+          <association Id="807866fd-bc4c-4394-94f2-779c8aa64a0e" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Розпочати модельювання" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2962c0c7-a853-4da5-8587-a1d85aa5a73b" LastKnownName="Розпочати модельювання" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29f45609-ad32-4be9-9206-6e88ed7f9d43" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="baefa91c-b906-4285-84c0-73e4ef3f928c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="adff1382-a201-4c36-8de6-b5f7825a4625" name="Розпочати модельювання" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fbdfc1d2-6229-418a-ac75-9d1c0118c9ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aeacbd0c-c6c2-40c2-9af1-4619af27a0d9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="acef229a-63cf-4926-beb9-a136734f5662" name="Вклчити дитектор температури" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc1ea3d0-9dfe-45b9-becb-a5675658a0b2" />
+        <extendedCases>
+          <extend Id="6bd1018c-6e04-42ec-9a51-76c7b0c32fd7">
+            <useCaseMoniker Id="2962c0c7-a853-4da5-8587-a1d85aa5a73b" LastKnownName="Розпочати модельювання" />
+            <elementDefinition Id="1122991b-fab2-4d88-8d98-f5e87b98c48f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bbddc597-3a61-4682-bed6-a12a785034fd" name="Включити дитектор руху" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e1eb40d-8893-4679-97ef-1d2434eda8bc" />
+        <extendedCases>
+          <extend Id="6203ad73-b136-4e77-8e18-7fbc3b18c365">
+            <useCaseMoniker Id="2962c0c7-a853-4da5-8587-a1d85aa5a73b" LastKnownName="Розпочати модельювання" />
+            <elementDefinition Id="06ecee90-a754-4649-9c9f-d9d6cba1b891" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="67478112-5a5e-43fb-b2aa-9993bc99f1ea" name="Включити дитектор температури і руху" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d129ca4-f90a-486c-a71e-46ff1a112bd8" />
+        <extendedCases>
+          <extend Id="0027a02d-5904-48e8-97ca-83ff16d665f9">
+            <useCaseMoniker Id="2962c0c7-a853-4da5-8587-a1d85aa5a73b" LastKnownName="Розпочати модельювання" />
+            <elementDefinition Id="8a567210-8f6c-45b2-a7d3-9fe39fbc373e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2962c0c7-a853-4da5-8587-a1d85aa5a73b" name="Розпочати модельювання" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9e2f4c85-4d01-44fd-b1b8-4d4563aa17f3" />
+        <additions>
+          <include Id="e87746fb-f088-4493-95a0-b178b4caab6d">
+            <useCaseMoniker Id="b6bee426-e4e0-45a3-a085-61eaa783ed7d" LastKnownName="Закінчити моделювання" />
+            <elementDefinition Id="4462ad48-b3bc-4cca-857e-766790930b1d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6bee426-e4e0-45a3-a085-61eaa783ed7d" name="Закінчити моделювання" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="125baee3-507c-4d6d-bdce-68b342c3d3fe" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d60446d7-e152-4308-9a16-b77f5c337096" name="Mementor">
+    <elementDefinition Id="31447c57-b2a4-4e7a-bf49-e0953890605a" />
+  </package>
+</useCaseModelRoot>
